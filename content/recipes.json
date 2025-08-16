@@ -1,0 +1,27 @@
+{
+	"recipes": [
+		{
+			"id": "explore.dream",
+			"label": "Я погружаюсь в сон",
+			"warmup": 30,
+			"craftable": true,
+			"startdescription": "Start desc",
+			"description": "Desc",
+			"requirements": {
+				"dream": 1
+			},
+			"effects": {
+				"dream": -1,
+				"place.dreamshrine": 1
+			},
+			"actionId": "explore"
+		},
+		{
+			"id": "convey.meetsrinekeeper",
+			"effects": {
+				"ally.shrinekeeper": 1
+			},
+			"actionId": "convey"
+		}
+	]
+}

@@ -1,0 +1,12 @@
+{
+	"endings": [
+		{
+			"id": "bodynomore",
+			"label": "Мое тело мертво",
+			"description": "Я — мертв. Мое сознание больше не привязано к телу, ибо более не имеет места. Моя плоть теперь подобна праху.",
+			"flavour": "Vile",
+			"anim": "DramaticLightEvil",
+			"achievementid": "XXX"
+		}
+	]
+}

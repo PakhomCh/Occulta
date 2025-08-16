@@ -1,0 +1,27 @@
+{
+	"elements": [
+		{
+			"id": "dream",
+			"label": "Сон",
+			"description": "Мне снится сон о старом храме.",
+			"slots": []
+		},
+		{
+			"id": "place.dreamshrine",
+			"label": "Алтарь снов",
+			"slots": [],
+			"aspects": {
+				"place": 1
+			}
+		},
+		{
+			"id": "ally.shrinekeeper",
+			"label": "Хранительница снов",
+			"slots": [],
+			"aspects": {
+				"ally": 1
+			},
+			"unique": true
+		}
+	]
+}

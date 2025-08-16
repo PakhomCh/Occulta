@@ -1,0 +1,40 @@
+{
+	"elements": [
+		{
+			"id": "arcanus",
+			"isAspect": true
+		},
+		{
+			"id": "ally",
+			"isAspect": true
+		},
+		{
+			"id": "challenge",
+			"isAspect": true
+		},
+		{
+			"id": "effect",
+			"isAspect": true
+		},
+		{
+			"id": "effectbad",
+			"isAspect": true
+		},
+		{
+			"id": "foe",
+			"isAspect": true
+		},
+		{
+			"id": "knowledge",
+			"isAspect": true
+		},
+		{
+			"id": "place",
+			"isAspect": true
+		},
+		{
+			"id": "relic",
+			"isAspect": true
+		}
+	]
+}

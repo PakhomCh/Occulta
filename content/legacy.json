@@ -1,0 +1,17 @@
+{
+	"legacies": [
+		{
+			"id": "conquestor",
+			"label": "Завоеватель",
+			"image": "conquestor",
+			"startingVerbId": "explore",
+			"description": "Topbox",
+			"startdescription": "Bottombox",
+			"effects": {
+				"dream": 1
+			},
+			"newstart": true,
+			"availableWithoutEndingMatch": true
+		}
+	]
+}
