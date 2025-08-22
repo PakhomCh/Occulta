@@ -1,9 +1,9 @@
 {
 	"recipes": [
 		{
-			"id": "explore.dream",
+			"id": "seek.dream",
 			"label": "Я погружаюсь в сон",
-			"warmup": 30,
+			"warmup": 10,
 			"craftable": true,
 			"startdescription": "Start desc",
 			"description": "Desc",
@@ -14,10 +14,66 @@
 				"dream": -1,
 				"place.dreamshrine": 1
 			},
-			"actionId": "explore"
+			"actionId": "seek",
+			"inductions": [
+				{
+					"id": "resolve.getelements"
+				}
+			]
 		},
 		{
-			"id": "convey.meetsrinekeeper",
+			"id": "seek.dreamshrine",
+			"label": "Меня ожидают",
+			"maxexecutions": 1,
+			"warmup": 30,
+			"craftable": true,
+			"startdescription": "Я слышу едва заметный шепот, доносящийся из воды.",
+			"description": "Я наклоняюсь ближе, чтобы разобрать слова и замечаю силует, скрытый под водой.",
+			"requirements": {
+				"place.dreamshrine": 1
+			},
+			"effects": {
+				"challengewatertrap": 1
+			},
+			"purge": {
+				"place": 1
+			},
+			"actionId": "seek"
+		},
+		{
+			"id": "resolve.getelements",
+			"label": "Я владею силой",
+			"warmup": 10,
+			"startdescription": "В этом сне я наделен силами.",
+			"description": "Мои силы стоит использовать с умом. Мне предстоят нелегкие испытания. Сил может не хватить.",
+			"effects": {
+				"heart3": 1,
+				"will3": 1,
+				"stillness3": 1
+			},
+			"actionId": "resolve"
+		},
+		{
+			"id": "resolve.watertrapchallenge",
+			"label": "Испытание немой воды",
+			"warmup": 30,
+			"craftable": true,
+			"startdescription": "В неподвижных водах укрыт страдающий. Его страдание в его безмолвии.",
+			"description": "Я освобождаю того, кто теперь послужит хранителем моему сну.",
+			"requirements": {
+				"challengewatertrap": 1
+			},
+			"effects": {
+				"will2": 1,
+				"challengewatertrap": -1
+			},
+			"actionId": "resolve"
+		},
+		{
+			"id": "convey.meetshrinekeeper",
+			"label": "Хранительница алтаря",
+			"warmup": 20,
+			"description": "Меня встречает хранительница этого места. В ее немой речи я разбираю слова: \"Час\", \"Плен\", \"Обращение\", \"Истории\", \"Лес\". Она протягивает мне карту. \"Силы\", \"Источник\", ",
 			"effects": {
 				"ally.shrinekeeper": 1
 			},

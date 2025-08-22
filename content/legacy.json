@@ -4,9 +4,12 @@
 			"id": "conquestor",
 			"label": "Завоеватель",
 			"image": "conquestor",
-			"startingVerbId": "explore",
+			"startingVerbId": "seek",
 			"description": "Topbox",
 			"startdescription": "Bottombox",
+			"statusbarelements": [
+				"strength"
+			],
 			"effects": {
 				"dream": 1
 			},

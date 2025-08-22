@@ -9,11 +9,15 @@
 			}
 		},
 		{
-			"id": "explore",
+			"id": "seek",
 			"label": "Исследовать",
 			"description": "Я могу посвятить свое время какому-то месту, предмету или знанию.",
 			"slot": {
-				"id": "explore"
+				"id": "seek",
+				"required": {
+					"place": 1,
+					"dream": 1
+				}
 			}
 		},
 		{
@@ -29,7 +33,11 @@
 			"label": "Преодолеть",
 			"description": "Нет испытания, неподвластного человеку. Нет ноши слижком тяжкой для моего духа.",
 			"slot": {
-				"id": "resolve"
+				"id": "resolve",
+				"required": {
+					"challenge": 1,
+					"effectbad": 1
+				}
 			}
 		},
 		{

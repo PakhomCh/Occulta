@@ -5,11 +5,13 @@
 			"isAspect": true
 		},
 		{
-			"id": "ally",
+			"id": "allied",
+			"label": "Союзник",
 			"isAspect": true
 		},
 		{
 			"id": "challenge",
+			"label": "Испытание",
 			"isAspect": true
 		},
 		{
@@ -34,6 +36,12 @@
 		},
 		{
 			"id": "relic",
+			"isAspect": true
+		},
+		{
+			"id": "strength",
+			"label": "Сила",
+			"description": "Я состою из сил. Как и любые блага человека, они имеют свойство заканчиваться.",
 			"isAspect": true
 		}
 	]

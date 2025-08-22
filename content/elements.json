@@ -12,7 +12,8 @@
 			"slots": [],
 			"aspects": {
 				"place": 1
-			}
+			},
+			"unique": true
 		},
 		{
 			"id": "ally.shrinekeeper",
@@ -22,6 +23,63 @@
 				"ally": 1
 			},
 			"unique": true
+		},
+		{
+			"id": "heart3",
+			"label": "Мое бьющееся сердце",
+			"slots": [],
+			"aspects": {
+				"strength": 3
+			},
+			"unique": true,
+			"uniquenessgroup": "heart"
+		},
+		{
+			"id": "will3",
+			"label": "Моя железная воля",
+			"slots": [],
+			"aspects": {
+				"strength": 3
+			},
+			"unique": true,
+			"uniquenessgroup": "will"
+		},
+		{
+			"id": "will2",
+			"label": "Моя железная воля",
+			"slots": [],
+			"aspects": {
+				"strength": 2
+			},
+			"unique": true,
+			"uniquenessgroup": "will"
+		},
+		{
+			"id": "stillness3",
+			"label": "Мое непоколебимое спокойствие",
+			"slots": [],
+			"aspects": {
+				"strength": 3
+			},
+			"unique": true,
+			"uniquenessgroup": "stillness"
+		},
+		{
+			"id": "challengewatertrap",
+			"label": "Пленящие воды",
+			"description": "Кто-то закован под водой. Я не слышу звука его голоса, но я слышу крик о помощи.",
+			"slots": [
+				{
+					"id": "power",
+					"label": "power",
+					"required": {
+						"will3": 1
+					}
+				}
+			],
+			"aspects": {
+				"challenge": 1
+			}
 		}
 	]
 }
