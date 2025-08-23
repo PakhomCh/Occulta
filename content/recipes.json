@@ -61,19 +61,26 @@
 			"startdescription": "В неподвижных водах укрыт страдающий. Его страдание в его безмолвии.",
 			"description": "Я освобождаю того, кто теперь послужит хранителем моему сну.",
 			"requirements": {
-				"challengewatertrap": 1
+				"challengewatertrap": 1,
+				"will3": 1
 			},
 			"effects": {
 				"will2": 1,
 				"challengewatertrap": -1
 			},
-			"actionId": "resolve"
+			"actionId": "resolve",
+			"inductions": [
+				{
+					"id": "convey.meetshrinekeeper"
+				}
+			]
 		},
 		{
 			"id": "convey.meetshrinekeeper",
 			"label": "Хранительница алтаря",
 			"warmup": 20,
-			"description": "Меня встречает хранительница этого места. В ее немой речи я разбираю слова: \"Час\", \"Плен\", \"Обращение\", \"Истории\", \"Лес\". Она протягивает мне карту. \"Силы\", \"Источник\", ",
+			"startdescription": "Меня встречает хранительница этого места. В ее немой речи я разбираю слова: \"Час\", \"Плен\", \"Обращение\", \"Истории\", \"Лес\".",
+			"description": "Хранительница протягивает мне карту. \"Силы\", \"Источник\", ",
 			"effects": {
 				"ally.shrinekeeper": 1
 			},
