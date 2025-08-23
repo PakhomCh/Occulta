@@ -28,6 +28,7 @@
 		},
 		{
 			"id": "knowledge",
+			"label": "Знание",
 			"isAspect": true
 		},
 		{
@@ -42,6 +43,31 @@
 			"id": "strength",
 			"label": "Сила",
 			"description": "Я состою из сил. Как и любые блага человека, они имеют свойство заканчиваться.",
+			"isAspect": true
+		},
+		{
+			"id": "myheart",
+			"label": "Мое сердце",
+			"isAspect": true
+		},
+		{
+			"id": "mycunning",
+			"isAspect": true
+		},
+		{
+			"id": "mystillness",
+			"isAspect": true
+		},
+		{
+			"id": "mywill",
+			"isAspect": true
+		},
+		{
+			"id": "mymysteries",
+			"isAspect": true
+		},
+		{
+			"id": "weakness",
 			"isAspect": true
 		}
 	]

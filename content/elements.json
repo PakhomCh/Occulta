@@ -25,44 +25,97 @@
 			"unique": true
 		},
 		{
-			"id": "heart3",
+			"id": "my.heart3",
 			"label": "Мое бьющееся сердце",
 			"slots": [],
 			"aspects": {
 				"strength": 3
 			},
 			"unique": true,
-			"uniquenessgroup": "heart"
+			"uniquenessgroup": "myheart"
 		},
 		{
-			"id": "will3",
+			"id": "my.will0",
+			"label": "Моя сломленная воля",
+			"decayTo": "my.will1",
+			"slots": [],
+			"aspects": {
+				"weakness": 1
+			},
+			"unique": true,
+			"uniquenessgroup": "mywill",
+			"lifetime": 300,
+			"resaturate": true
+		},
+		{
+			"id": "my.will1",
 			"label": "Моя железная воля",
 			"slots": [],
 			"aspects": {
-				"strength": 3
+				"strength": 1
 			},
 			"unique": true,
-			"uniquenessgroup": "will"
+			"uniquenessgroup": "mywill"
 		},
 		{
-			"id": "will2",
+			"id": "my.will2",
 			"label": "Моя железная воля",
 			"slots": [],
 			"aspects": {
 				"strength": 2
 			},
 			"unique": true,
-			"uniquenessgroup": "will"
+			"uniquenessgroup": "mywill"
 		},
 		{
-			"id": "stillness3",
+			"id": "my.will3",
+			"label": "Моя железная воля",
+			"slots": [],
+			"aspects": {
+				"strength": 3
+			},
+			"unique": true,
+			"uniquenessgroup": "mywill"
+		},
+		{
+			"id": "my.will4",
+			"label": "Моя железная воля",
+			"slots": [],
+			"aspects": {
+				"strength": 4
+			},
+			"unique": true,
+			"uniquenessgroup": "mywill"
+		},
+		{
+			"id": "my.will5",
+			"label": "Моя железная воля",
+			"slots": [],
+			"aspects": {
+				"strength": 5
+			},
+			"unique": true,
+			"uniquenessgroup": "mywill"
+		},
+		{
+			"id": "my.will6",
+			"label": "Моя железная воля",
+			"slots": [],
+			"aspects": {
+				"strength": 6
+			},
+			"unique": true,
+			"uniquenessgroup": "mywill"
+		},
+		{
+			"id": "my.stillness3",
 			"label": "Мое непоколебимое спокойствие",
 			"slots": [],
 			"aspects": {
 				"strength": 3
 			},
 			"unique": true,
-			"uniquenessgroup": "stillness"
+			"uniquenessgroup": "mystillness"
 		},
 		{
 			"id": "challengewatertrap",
@@ -73,13 +126,73 @@
 					"id": "power",
 					"label": "power",
 					"required": {
-						"will3": 1
-					}
+						"spell.jarrum": 1
+					},
+					"consumes": true
 				}
 			],
 			"aspects": {
 				"challenge": 1
 			}
+		},
+		{
+			"id": "knowledge.noteonsparks",
+			"label": "Заметки об искрах",
+			"description": "Они не сразу пропадают. Щелчком своей воли я порождаю пламенный ливень. Они - сыны костра и дочери пепла. C большим шансом они октажутся служить мне.",
+			"slots": [
+				{
+					"id": "will",
+					"label": "Мой огонь...",
+					"required": {
+						"mywill": 1
+					},
+					"forbidden": {
+						"weakness": 1
+					}
+				},
+				{
+					"id": "stillness",
+					"label": "...или холод",
+					"required": {
+						"mystillness": 1
+					},
+					"forbidden": {
+						"weakness": 1
+					}
+				}
+			],
+			"aspects": {
+				"knowledge": 1
+			},
+			"unique": true
+		},
+		{
+			"id": "spell.jarrum",
+			"label": "Заклятье: Джаррум",
+			"slots": [],
+			"aspects": {
+				"effect": 1
+			},
+			"lifetime": 300
+		},
+		{
+			"id": "spell.ghardail",
+			"label": "Заклятье: Гардаль",
+			"slots": [],
+			"aspects": {
+				"effect": 1
+			},
+			"lifetime": 450
+		},
+		{
+			"id": "spell.confundo",
+			"label": "Неудавшееся заклятье",
+			"description": "Порой, отсутствие результата это тоже результат.",
+			"slots": [],
+			"aspects": {
+				"effect": 1
+			},
+			"lifetime": 10
 		}
 	]
 }

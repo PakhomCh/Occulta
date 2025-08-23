@@ -25,7 +25,11 @@
 			"label": "Применить",
 			"description": "Я могу использовать свои знания и инструменты чтобы чего-то добиться.",
 			"slot": {
-				"id": "extract"
+				"id": "extract",
+				"required": {
+					"knowledge": 1,
+					"relic": 1
+				}
 			}
 		},
 		{

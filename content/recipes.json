@@ -6,15 +6,20 @@
 			"warmup": 10,
 			"craftable": true,
 			"startdescription": "Start desc",
-			"description": "Desc",
+			"description": "Desc1",
 			"requirements": {
 				"dream": 1
 			},
 			"effects": {
-				"dream": -1,
-				"place.dreamshrine": 1
+				"dream": -1
 			},
 			"actionId": "seek",
+			"linked": [
+				{
+					"id": "seek.dream2",
+					"chance": 100
+				}
+			],
 			"inductions": [
 				{
 					"id": "resolve.getelements"
@@ -47,9 +52,9 @@
 			"startdescription": "В этом сне я наделен силами.",
 			"description": "Мои силы стоит использовать с умом. Мне предстоят нелегкие испытания. Сил может не хватить.",
 			"effects": {
-				"heart3": 1,
-				"will3": 1,
-				"stillness3": 1
+				"my.heart3": 1,
+				"my.will3": 1,
+				"my.stillness3": 1
 			},
 			"actionId": "resolve"
 		},
@@ -62,10 +67,9 @@
 			"description": "Я освобождаю того, кто теперь послужит хранителем моему сну.",
 			"requirements": {
 				"challengewatertrap": 1,
-				"will3": 1
+				"spell.jarrum": 1
 			},
 			"effects": {
-				"will2": 1,
 				"challengewatertrap": -1
 			},
 			"actionId": "resolve",
@@ -85,6 +89,167 @@
 				"ally.shrinekeeper": 1
 			},
 			"actionId": "convey"
+		},
+		{
+			"id": "seek.dream2",
+			"warmup": 30,
+			"startdescription": "Desc2",
+			"description": "Desc3",
+			"effects": {
+				"place.dreamshrine": 1
+			},
+			"actionId": "seek",
+			"inductions": [
+				{
+					"id": "extract.getstartingknowledge"
+				}
+			]
+		},
+		{
+			"id": "extract.getstartingknowledge",
+			"label": "Мои воспоминания о жизни, из которой я ушел",
+			"warmup": 20,
+			"effects": {
+				"knowledge.noteonsparks": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "extract.losepowers",
+			"label": "Частица моих сил потрачена",
+			"warmup": 10,
+			"actionId": "extract",
+			"linked": [
+				{
+					"id": "losepower.will6to5",
+					"chance": 100
+				},
+				{
+					"id": "losepower.will5to4",
+					"chance": 100
+				},
+				{
+					"id": "losepower.will4to3",
+					"chance": 100
+				},
+				{
+					"id": "losepower.will3to2",
+					"chance": 100
+				},
+				{
+					"id": "losepower.will2to1",
+					"chance": 100
+				},
+				{
+					"id": "losepower.will1to0",
+					"chance": 100
+				}
+			]
+		},
+		{
+			"id": "losepower.will6to5",
+			"label": "Моя воля затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.will6": 1
+			},
+			"effects": {
+				"my.will5": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.will5to4",
+			"label": "Моя воля затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.will5": 1
+			},
+			"effects": {
+				"my.will4": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.will4to3",
+			"label": "Моя воля затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.will4": 1
+			},
+			"effects": {
+				"my.will3": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.will3to2",
+			"label": "Моя воля затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.will3": 1
+			},
+			"effects": {
+				"my.will2": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.will2to1",
+			"label": "Моя воля затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.will2": 1
+			},
+			"effects": {
+				"my.will1": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.will1to0",
+			"label": "Моя воля тухнет",
+			"warmup": 10,
+			"requirements": {
+				"my.will1": 1
+			},
+			"effects": {
+				"my.will0": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "extract.noteonsparks",
+			"label": "Я взываю к искрам",
+			"warmup": 10,
+			"craftable": true,
+			"internaldeck": {
+				"spec": [
+					"spell.ghardail",
+					"spell.jarrum",
+					"spell.jarrum",
+					"spell.jarrum",
+					"spell.jarrum",
+					"spell.jarrum",
+					"spell.confundo",
+					"spell.confundo",
+					"spell.confundo",
+					"spell.confundo"
+				],
+				"resetonexhaustion": true
+			},
+			"requirements": {
+				"knowledge.noteonsparks": 1,
+				"mywill": 1,
+				"mystillness": -1
+			},
+			"actionId": "extract",
+			"linked": [
+				{
+					"id": "extract.losepowers",
+					"chance": 100
+				}
+			]
 		}
 	]
 }
