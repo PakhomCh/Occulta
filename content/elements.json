@@ -7,22 +7,78 @@
 			"slots": []
 		},
 		{
-			"id": "place.dreamshrine",
-			"label": "Алтарь снов",
+			"id": "dungeon.dreamshrine",
+			"label": "Руины святилища",
 			"slots": [],
 			"aspects": {
 				"place": 1
-			},
-			"unique": true
+			}
 		},
 		{
 			"id": "ally.shrinekeeper",
 			"label": "Хранительница снов",
+			"slots": [
+				{
+					"id": "strength1",
+					"label": "Моя сила",
+					"required": {
+						"strength": 1,
+						"weakness": 1
+					}
+				},
+				{
+					"id": "strength2",
+					"label": "Моя сила",
+					"required": {
+						"strength": 1,
+						"weakness": 1
+					}
+				},
+				{
+					"id": "strength3",
+					"label": "Моя сила",
+					"required": {
+						"strength": 1,
+						"weakness": 1
+					}
+				}
+			],
+			"aspects": {
+				"allied": 1
+			}
+		},
+		{
+			"id": "my.heart0",
+			"label": "Мое остановившееся сердце",
+			"decayTo": "my.heart1",
 			"slots": [],
 			"aspects": {
-				"ally": 1
+				"weakness": 1
 			},
-			"unique": true
+			"unique": true,
+			"uniquenessgroup": "myheart",
+			"lifetime": 300,
+			"resaturate": true
+		},
+		{
+			"id": "my.heart1",
+			"label": "Мое бьющееся сердце",
+			"slots": [],
+			"aspects": {
+				"strength": 1
+			},
+			"unique": true,
+			"uniquenessgroup": "myheart"
+		},
+		{
+			"id": "my.heart2",
+			"label": "Мое бьющееся сердце",
+			"slots": [],
+			"aspects": {
+				"strength": 2
+			},
+			"unique": true,
+			"uniquenessgroup": "myheart"
 		},
 		{
 			"id": "my.heart3",
@@ -30,6 +86,46 @@
 			"slots": [],
 			"aspects": {
 				"strength": 3
+			},
+			"unique": true,
+			"uniquenessgroup": "myheart"
+		},
+		{
+			"id": "my.heart4",
+			"label": "Мое бьющееся сердце",
+			"slots": [],
+			"aspects": {
+				"strength": 4
+			},
+			"unique": true,
+			"uniquenessgroup": "myheart"
+		},
+		{
+			"id": "my.heart4",
+			"label": "Мое бьющееся сердце",
+			"slots": [],
+			"aspects": {
+				"strength": 4
+			},
+			"unique": true,
+			"uniquenessgroup": "myheart"
+		},
+		{
+			"id": "my.heart5",
+			"label": "Мое бьющееся сердце",
+			"slots": [],
+			"aspects": {
+				"strength": 5
+			},
+			"unique": true,
+			"uniquenessgroup": "myheart"
+		},
+		{
+			"id": "my.heart6",
+			"label": "Мое бьющееся сердце",
+			"slots": [],
+			"aspects": {
+				"strength": 6
 			},
 			"unique": true,
 			"uniquenessgroup": "myheart"
@@ -108,6 +204,39 @@
 			"uniquenessgroup": "mywill"
 		},
 		{
+			"id": "my.stillness0",
+			"label": "Моя подступающая тревога",
+			"decayTo": "my.stillness1",
+			"slots": [],
+			"aspects": {
+				"weakness": 1
+			},
+			"unique": true,
+			"uniquenessgroup": "mystillness",
+			"lifetime": 300,
+			"resaturate": true
+		},
+		{
+			"id": "my.stillness1",
+			"label": "Мое непоколебимое спокойствие",
+			"slots": [],
+			"aspects": {
+				"strength": 1
+			},
+			"unique": true,
+			"uniquenessgroup": "mystillness"
+		},
+		{
+			"id": "my.stillness2",
+			"label": "Мое непоколебимое спокойствие",
+			"slots": [],
+			"aspects": {
+				"strength": 2
+			},
+			"unique": true,
+			"uniquenessgroup": "mystillness"
+		},
+		{
 			"id": "my.stillness3",
 			"label": "Мое непоколебимое спокойствие",
 			"slots": [],
@@ -118,6 +247,620 @@
 			"uniquenessgroup": "mystillness"
 		},
 		{
+			"id": "my.stillness4",
+			"label": "Мое непоколебимое спокойствие",
+			"slots": [],
+			"aspects": {
+				"strength": 4
+			},
+			"unique": true,
+			"uniquenessgroup": "mystillness"
+		},
+		{
+			"id": "my.stillness5",
+			"label": "Мое непоколебимое спокойствие",
+			"slots": [],
+			"aspects": {
+				"strength": 5
+			},
+			"unique": true,
+			"uniquenessgroup": "mystillness"
+		},
+		{
+			"id": "my.stillness6",
+			"label": "Мое непоколебимое спокойствие",
+			"slots": [],
+			"aspects": {
+				"strength": 6
+			},
+			"unique": true,
+			"uniquenessgroup": "mystillness"
+		},
+		{
+			"id": "my.cruelty0",
+			"label": "Моя подавленная жестокость",
+			"decayTo": "my.cruelty1",
+			"slots": [],
+			"aspects": {
+				"weakness": 1
+			},
+			"unique": true,
+			"uniquenessgroup": "mycruelty",
+			"lifetime": 300,
+			"resaturate": true
+		},
+		{
+			"id": "my.cruelty1",
+			"label": "Моя безудержная жестокость",
+			"slots": [],
+			"aspects": {
+				"strength": 1
+			},
+			"unique": true,
+			"uniquenessgroup": "mycruelty"
+		},
+		{
+			"id": "my.cruelty2",
+			"label": "Моя безудержная жестокость",
+			"slots": [],
+			"aspects": {
+				"strength": 2
+			},
+			"unique": true,
+			"uniquenessgroup": "mycruelty"
+		},
+		{
+			"id": "my.cruelty3",
+			"label": "Моя безудержная жестокость",
+			"slots": [],
+			"aspects": {
+				"strength": 3
+			},
+			"unique": true,
+			"uniquenessgroup": "mycruelty"
+		},
+		{
+			"id": "my.cruelty4",
+			"label": "Моя безудержная жестокость",
+			"slots": [],
+			"aspects": {
+				"strength": 4
+			},
+			"unique": true,
+			"uniquenessgroup": "mycruelty"
+		},
+		{
+			"id": "my.cruelty5",
+			"label": "Моя безудержная жестокость",
+			"slots": [],
+			"aspects": {
+				"strength": 5
+			},
+			"unique": true,
+			"uniquenessgroup": "mycruelty"
+		},
+		{
+			"id": "my.cruelty6",
+			"label": "Моя безудержная жестокость",
+			"slots": [],
+			"aspects": {
+				"strength": 6
+			},
+			"unique": true,
+			"uniquenessgroup": "mycruelty"
+		},
+		{
+			"id": "my.cunning0",
+			"label": "Моя наивная хитрость",
+			"decayTo": "my.cunning1",
+			"slots": [],
+			"aspects": {
+				"weakness": 1
+			},
+			"unique": true,
+			"uniquenessgroup": "mycunning",
+			"lifetime": 300,
+			"resaturate": true
+		},
+		{
+			"id": "my.cunning1",
+			"label": "Моя изощренная хитрость",
+			"slots": [],
+			"aspects": {
+				"strength": 1
+			},
+			"unique": true,
+			"uniquenessgroup": "mycunning"
+		},
+		{
+			"id": "my.cunning2",
+			"label": "Моя изощренная хитрость",
+			"slots": [],
+			"aspects": {
+				"strength": 2
+			},
+			"unique": true,
+			"uniquenessgroup": "mycunning"
+		},
+		{
+			"id": "my.cunning3",
+			"label": "Моя изощренная хитрость",
+			"slots": [],
+			"aspects": {
+				"strength": 3
+			},
+			"unique": true,
+			"uniquenessgroup": "mycunning"
+		},
+		{
+			"id": "my.cunning4",
+			"label": "Моя изощренная хитрость",
+			"slots": [],
+			"aspects": {
+				"strength": 4
+			},
+			"unique": true,
+			"uniquenessgroup": "mycunning"
+		},
+		{
+			"id": "my.cunning5",
+			"label": "Моя изощренная хитрость",
+			"slots": [],
+			"aspects": {
+				"strength": 5
+			},
+			"unique": true,
+			"uniquenessgroup": "mycunning"
+		},
+		{
+			"id": "my.cunning6",
+			"label": "Моя изощренная хитрость",
+			"slots": [],
+			"aspects": {
+				"strength": 6
+			},
+			"unique": true,
+			"uniquenessgroup": "mycunning"
+		},
+		{
+			"id": "my.curiosity0",
+			"label": "Мое подавленное любопытство",
+			"decayTo": "my.curiosity1",
+			"slots": [],
+			"aspects": {
+				"weakness": 1
+			},
+			"unique": true,
+			"uniquenessgroup": "mycuriosity",
+			"lifetime": 300,
+			"resaturate": true
+		},
+		{
+			"id": "my.curiosity1",
+			"label": "Мое ненасытное любопытство",
+			"slots": [],
+			"aspects": {
+				"strength": 1
+			},
+			"unique": true,
+			"uniquenessgroup": "mycuriosity"
+		},
+		{
+			"id": "my.curiosity2",
+			"label": "Мое ненасытное любопытство",
+			"slots": [],
+			"aspects": {
+				"strength": 2
+			},
+			"unique": true,
+			"uniquenessgroup": "mycuriosity"
+		},
+		{
+			"id": "my.curiosity3",
+			"label": "Мое ненасытное любопытство",
+			"slots": [],
+			"aspects": {
+				"strength": 3
+			},
+			"unique": true,
+			"uniquenessgroup": "mycuriosity"
+		},
+		{
+			"id": "my.curiosity4",
+			"label": "Мое ненасытное любопытство",
+			"slots": [],
+			"aspects": {
+				"strength": 4
+			},
+			"unique": true,
+			"uniquenessgroup": "mycuriosity"
+		},
+		{
+			"id": "my.curiosity5",
+			"label": "Мое ненасытное любопытство",
+			"slots": [],
+			"aspects": {
+				"strength": 5
+			},
+			"unique": true,
+			"uniquenessgroup": "mycuriosity"
+		},
+		{
+			"id": "my.curiosity6",
+			"label": "Мое ненасытное любопытство",
+			"slots": [],
+			"aspects": {
+				"strength": 6
+			},
+			"unique": true,
+			"uniquenessgroup": "mycuriosity"
+		},
+		{
+			"id": "my.desires0",
+			"label": "Мои забытые желания",
+			"decayTo": "my.desires1",
+			"slots": [],
+			"aspects": {
+				"weakness": 1
+			},
+			"unique": true,
+			"uniquenessgroup": "mydesires",
+			"lifetime": 300,
+			"resaturate": true
+		},
+		{
+			"id": "my.desires1",
+			"label": "Мои неутолимые желания",
+			"slots": [],
+			"aspects": {
+				"strength": 1
+			},
+			"unique": true,
+			"uniquenessgroup": "mydesires"
+		},
+		{
+			"id": "my.desires2",
+			"label": "Мои неутолимые желания",
+			"slots": [],
+			"aspects": {
+				"strength": 2
+			},
+			"unique": true,
+			"uniquenessgroup": "mydesires"
+		},
+		{
+			"id": "my.desires3",
+			"label": "Мои неутолимые желания",
+			"slots": [],
+			"aspects": {
+				"strength": 3
+			},
+			"unique": true,
+			"uniquenessgroup": "mydesires"
+		},
+		{
+			"id": "my.desires4",
+			"label": "Мои неутолимые желания",
+			"slots": [],
+			"aspects": {
+				"strength": 4
+			},
+			"unique": true,
+			"uniquenessgroup": "mydesires"
+		},
+		{
+			"id": "my.desires5",
+			"label": "Мои неутолимые желания",
+			"slots": [],
+			"aspects": {
+				"strength": 5
+			},
+			"unique": true,
+			"uniquenessgroup": "mydesires"
+		},
+		{
+			"id": "my.desires6",
+			"label": "Мои неутолимые желания",
+			"slots": [],
+			"aspects": {
+				"strength": 6
+			},
+			"unique": true,
+			"uniquenessgroup": "mydesires"
+		},
+		{
+			"id": "my.fears0",
+			"label": "Мои всепоглощающие страхи",
+			"decayTo": "my.fears1",
+			"slots": [],
+			"aspects": {
+				"weakness": 1
+			},
+			"unique": true,
+			"uniquenessgroup": "myfears",
+			"lifetime": 300,
+			"resaturate": true
+		},
+		{
+			"id": "my.fears1",
+			"label": "Мои укрощенные страхи",
+			"slots": [],
+			"aspects": {
+				"strength": 1
+			},
+			"unique": true,
+			"uniquenessgroup": "myfears"
+		},
+		{
+			"id": "my.fears2",
+			"label": "Мои укрощенные страхи",
+			"slots": [],
+			"aspects": {
+				"strength": 2
+			},
+			"unique": true,
+			"uniquenessgroup": "myfears"
+		},
+		{
+			"id": "my.fears3",
+			"label": "Мои укрощенные страхи",
+			"slots": [],
+			"aspects": {
+				"strength": 3
+			},
+			"unique": true,
+			"uniquenessgroup": "myfears"
+		},
+		{
+			"id": "my.fears4",
+			"label": "Мои укрощенные страхи",
+			"slots": [],
+			"aspects": {
+				"strength": 4
+			},
+			"unique": true,
+			"uniquenessgroup": "myfears"
+		},
+		{
+			"id": "my.fears5",
+			"label": "Мои укрощенные страхи",
+			"slots": [],
+			"aspects": {
+				"strength": 5
+			},
+			"unique": true,
+			"uniquenessgroup": "myfears"
+		},
+		{
+			"id": "my.fears6",
+			"label": "Мои укрощенные страхи",
+			"slots": [],
+			"aspects": {
+				"strength": 6
+			},
+			"unique": true,
+			"uniquenessgroup": "myfears"
+		},
+		{
+			"id": "my.hatred0",
+			"label": "Моя сдерживаемая ненависть",
+			"decayTo": "my.hatred1",
+			"slots": [],
+			"aspects": {
+				"weakness": 1
+			},
+			"unique": true,
+			"uniquenessgroup": "myhatred",
+			"lifetime": 300,
+			"resaturate": true
+		},
+		{
+			"id": "my.hatred1",
+			"label": "Моя безудержная ненависть",
+			"slots": [],
+			"aspects": {
+				"strength": 1
+			},
+			"unique": true,
+			"uniquenessgroup": "myhatred"
+		},
+		{
+			"id": "my.hatred2",
+			"label": "Моя безудержная ненависть",
+			"slots": [],
+			"aspects": {
+				"strength": 2
+			},
+			"unique": true,
+			"uniquenessgroup": "myhatred"
+		},
+		{
+			"id": "my.hatred3",
+			"label": "Моя безудержная ненависть",
+			"slots": [],
+			"aspects": {
+				"strength": 3
+			},
+			"unique": true,
+			"uniquenessgroup": "myhatred"
+		},
+		{
+			"id": "my.hatred4",
+			"label": "Моя безудержная ненависть",
+			"slots": [],
+			"aspects": {
+				"strength": 4
+			},
+			"unique": true,
+			"uniquenessgroup": "myhatred"
+		},
+		{
+			"id": "my.hatred5",
+			"label": "Моя безудержная ненависть",
+			"slots": [],
+			"aspects": {
+				"strength": 5
+			},
+			"unique": true,
+			"uniquenessgroup": "myhatred"
+		},
+		{
+			"id": "my.hatred6",
+			"label": "Моя безудержная ненависть",
+			"slots": [],
+			"aspects": {
+				"strength": 6
+			},
+			"unique": true,
+			"uniquenessgroup": "myhatred"
+		},
+		{
+			"id": "my.memories0",
+			"label": "Мои тусклые воспоминания",
+			"decayTo": "my.memories1",
+			"slots": [],
+			"aspects": {
+				"weakness": 1
+			},
+			"unique": true,
+			"uniquenessgroup": "mymemories",
+			"lifetime": 300,
+			"resaturate": true
+		},
+		{
+			"id": "my.memories1",
+			"label": "Мои яркие воспоминания",
+			"slots": [],
+			"aspects": {
+				"strength": 1
+			},
+			"unique": true,
+			"uniquenessgroup": "mymemories"
+		},
+		{
+			"id": "my.memories2",
+			"label": "Мои яркие воспоминания",
+			"slots": [],
+			"aspects": {
+				"strength": 2
+			},
+			"unique": true,
+			"uniquenessgroup": "mymemories"
+		},
+		{
+			"id": "my.memories3",
+			"label": "Мои яркие воспоминания",
+			"slots": [],
+			"aspects": {
+				"strength": 3
+			},
+			"unique": true,
+			"uniquenessgroup": "mymemories"
+		},
+		{
+			"id": "my.memories4",
+			"label": "Мои яркие воспоминания",
+			"slots": [],
+			"aspects": {
+				"strength": 4
+			},
+			"unique": true,
+			"uniquenessgroup": "mymemories"
+		},
+		{
+			"id": "my.memories5",
+			"label": "Мои яркие воспоминания",
+			"slots": [],
+			"aspects": {
+				"strength": 5
+			},
+			"unique": true,
+			"uniquenessgroup": "mymemories"
+		},
+		{
+			"id": "my.memories6",
+			"label": "Мои яркие воспоминания",
+			"slots": [],
+			"aspects": {
+				"strength": 6
+			},
+			"unique": true,
+			"uniquenessgroup": "mymemories"
+		},
+		{
+			"id": "my.mysteries0",
+			"label": "Мои забытые тайны",
+			"decayTo": "my.mysteries1",
+			"slots": [],
+			"aspects": {
+				"weakness": 1
+			},
+			"unique": true,
+			"uniquenessgroup": "mymysteries",
+			"lifetime": 300,
+			"resaturate": true
+		},
+		{
+			"id": "my.mysteries1",
+			"label": "Мои разгаданные тайны",
+			"slots": [],
+			"aspects": {
+				"strength": 1
+			},
+			"unique": true,
+			"uniquenessgroup": "mymysteries"
+		},
+		{
+			"id": "my.mysteries2",
+			"label": "Мои разгаданные тайны",
+			"slots": [],
+			"aspects": {
+				"strength": 2
+			},
+			"unique": true,
+			"uniquenessgroup": "mymysteries"
+		},
+		{
+			"id": "my.mysteries3",
+			"label": "Мои разгаданные тайны",
+			"slots": [],
+			"aspects": {
+				"strength": 3
+			},
+			"unique": true,
+			"uniquenessgroup": "mymysteries"
+		},
+		{
+			"id": "my.mysteries4",
+			"label": "Мои разгаданные тайны",
+			"slots": [],
+			"aspects": {
+				"strength": 4
+			},
+			"unique": true,
+			"uniquenessgroup": "mymysteries"
+		},
+		{
+			"id": "my.mysteries5",
+			"label": "Мои разгаданные тайны",
+			"slots": [],
+			"aspects": {
+				"strength": 5
+			},
+			"unique": true,
+			"uniquenessgroup": "mymysteries"
+		},
+		{
+			"id": "my.mysteries6",
+			"label": "Мои разгаданные тайны",
+			"slots": [],
+			"aspects": {
+				"strength": 6
+			},
+			"unique": true,
+			"uniquenessgroup": "mymysteries"
+		},
+		{
 			"id": "challengewatertrap",
 			"label": "Пленящие воды",
 			"description": "Кто-то закован под водой. Я не слышу звука его голоса, но я слышу крик о помощи.",
@@ -126,7 +869,8 @@
 					"id": "power",
 					"label": "power",
 					"required": {
-						"spell.jarrum": 1
+						"spell.jarrum": 1,
+						"spell.naum": 1
 					},
 					"consumes": true
 				}
@@ -173,11 +917,83 @@
 			"aspects": {
 				"effect": 1
 			},
-			"lifetime": 300
+			"lifetime": 180
 		},
 		{
 			"id": "spell.ghardail",
 			"label": "Заклятье: Гардаль",
+			"slots": [],
+			"aspects": {
+				"effect": 1
+			},
+			"lifetime": 300
+		},
+		{
+			"id": "spell.augum",
+			"label": "Заклятье: Аугум",
+			"slots": [],
+			"aspects": {
+				"effect": 1
+			},
+			"lifetime": 90
+		},
+		{
+			"id": "spell.mistra",
+			"label": "Заклятье: Мистра",
+			"slots": [],
+			"aspects": {
+				"effect": 1
+			},
+			"lifetime": 450
+		},
+		{
+			"id": "spell.primar",
+			"label": "Заклятье: Примар",
+			"slots": [],
+			"aspects": {
+				"effect": 1
+			},
+			"lifetime": 450
+		},
+		{
+			"id": "spell.badel",
+			"label": "Заклятье: Бадель",
+			"slots": [],
+			"aspects": {
+				"effect": 1
+			},
+			"lifetime": 450
+		},
+		{
+			"id": "spell.tammishit",
+			"label": "Заклятье: Таммишит",
+			"slots": [],
+			"aspects": {
+				"effect": 1
+			},
+			"lifetime": 450
+		},
+		{
+			"id": "spell.puludei",
+			"label": "Заклятье: Пулудей",
+			"slots": [],
+			"aspects": {
+				"effect": 1
+			},
+			"lifetime": 450
+		},
+		{
+			"id": "spell.sesticia",
+			"label": "Заклятье: Сестиция",
+			"slots": [],
+			"aspects": {
+				"effect": 1
+			},
+			"lifetime": 450
+		},
+		{
+			"id": "spell.naum",
+			"label": "Заклятье: Наум",
 			"slots": [],
 			"aspects": {
 				"effect": 1

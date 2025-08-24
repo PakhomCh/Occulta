@@ -35,10 +35,11 @@
 			"startdescription": "Я слышу едва заметный шепот, доносящийся из воды.",
 			"description": "Я наклоняюсь ближе, чтобы разобрать слова и замечаю силует, скрытый под водой.",
 			"requirements": {
-				"place.dreamshrine": 1
+				"dungeon.dreamshrine": 1
 			},
 			"effects": {
-				"challengewatertrap": 1
+				"challengewatertrap": 1,
+				"dungeon.dreamshrine": -1
 			},
 			"purge": {
 				"place": 1
@@ -59,7 +60,7 @@
 			"actionId": "resolve"
 		},
 		{
-			"id": "resolve.watertrapchallenge",
+			"id": "resolve.watertrapchallenge1",
 			"label": "Испытание немой воды",
 			"warmup": 30,
 			"craftable": true,
@@ -68,6 +69,27 @@
 			"requirements": {
 				"challengewatertrap": 1,
 				"spell.jarrum": 1
+			},
+			"effects": {
+				"challengewatertrap": -1
+			},
+			"actionId": "resolve",
+			"inductions": [
+				{
+					"id": "convey.meetshrinekeeper"
+				}
+			]
+		},
+		{
+			"id": "resolve.watertrapchallenge2",
+			"label": "Испытание немой воды",
+			"warmup": 30,
+			"craftable": true,
+			"startdescription": "В неподвижных водах укрыт страдающий. Его страдание в его безмолвии.",
+			"description": "Я освобождаю того, кто теперь послужит хранителем моему сну.",
+			"requirements": {
+				"challengewatertrap": 1,
+				"spell.naum": 1
 			},
 			"effects": {
 				"challengewatertrap": -1
@@ -96,7 +118,7 @@
 			"startdescription": "Desc2",
 			"description": "Desc3",
 			"effects": {
-				"place.dreamshrine": 1
+				"dungeon.dreamshrine": 1
 			},
 			"actionId": "seek",
 			"inductions": [
@@ -142,6 +164,246 @@
 				},
 				{
 					"id": "losepower.will1to0",
+					"chance": 100
+				},
+				{
+					"id": "losepower.cruelty6to5",
+					"chance": 100
+				},
+				{
+					"id": "losepower.cruelty5to4",
+					"chance": 100
+				},
+				{
+					"id": "losepower.cruelty4to3",
+					"chance": 100
+				},
+				{
+					"id": "losepower.cruelty3to2",
+					"chance": 100
+				},
+				{
+					"id": "losepower.cruelty2to1",
+					"chance": 100
+				},
+				{
+					"id": "losepower.cruelty1to0",
+					"chance": 100
+				},
+				{
+					"id": "losepower.cunning6to5",
+					"chance": 100
+				},
+				{
+					"id": "losepower.cunning5to4",
+					"chance": 100
+				},
+				{
+					"id": "losepower.cunning4to3",
+					"chance": 100
+				},
+				{
+					"id": "losepower.cunning3to2",
+					"chance": 100
+				},
+				{
+					"id": "losepower.cunning2to1",
+					"chance": 100
+				},
+				{
+					"id": "losepower.cunning1to0",
+					"chance": 100
+				},
+				{
+					"id": "losepower.curiosity6to5",
+					"chance": 100
+				},
+				{
+					"id": "losepower.curiosity5to4",
+					"chance": 100
+				},
+				{
+					"id": "losepower.curiosity4to3",
+					"chance": 100
+				},
+				{
+					"id": "losepower.curiosity3to2",
+					"chance": 100
+				},
+				{
+					"id": "losepower.curiosity2to1",
+					"chance": 100
+				},
+				{
+					"id": "losepower.curiosity1to0",
+					"chance": 100
+				},
+				{
+					"id": "losepower.desires6to5",
+					"chance": 100
+				},
+				{
+					"id": "losepower.desires5to4",
+					"chance": 100
+				},
+				{
+					"id": "losepower.desires4to3",
+					"chance": 100
+				},
+				{
+					"id": "losepower.desires3to2",
+					"chance": 100
+				},
+				{
+					"id": "losepower.desires2to1",
+					"chance": 100
+				},
+				{
+					"id": "losepower.desires1to0",
+					"chance": 100
+				},
+				{
+					"id": "losepower.fears6to5",
+					"chance": 100
+				},
+				{
+					"id": "losepower.fears5to4",
+					"chance": 100
+				},
+				{
+					"id": "losepower.fears4to3",
+					"chance": 100
+				},
+				{
+					"id": "losepower.fears3to2",
+					"chance": 100
+				},
+				{
+					"id": "losepower.fears2to1",
+					"chance": 100
+				},
+				{
+					"id": "losepower.fears1to0",
+					"chance": 100
+				},
+				{
+					"id": "losepower.hatred6to5",
+					"chance": 100
+				},
+				{
+					"id": "losepower.hatred5to4",
+					"chance": 100
+				},
+				{
+					"id": "losepower.hatred4to3",
+					"chance": 100
+				},
+				{
+					"id": "losepower.hatred3to2",
+					"chance": 100
+				},
+				{
+					"id": "losepower.hatred2to1",
+					"chance": 100
+				},
+				{
+					"id": "losepower.hatred1to0",
+					"chance": 100
+				},
+				{
+					"id": "losepower.heart6to5",
+					"chance": 100
+				},
+				{
+					"id": "losepower.heart5to4",
+					"chance": 100
+				},
+				{
+					"id": "losepower.heart4to3",
+					"chance": 100
+				},
+				{
+					"id": "losepower.heart3to2",
+					"chance": 100
+				},
+				{
+					"id": "losepower.heart2to1",
+					"chance": 100
+				},
+				{
+					"id": "losepower.heart1to0",
+					"chance": 100
+				},
+				{
+					"id": "losepower.memories6to5",
+					"chance": 100
+				},
+				{
+					"id": "losepower.memories5to4",
+					"chance": 100
+				},
+				{
+					"id": "losepower.memories4to3",
+					"chance": 100
+				},
+				{
+					"id": "losepower.memories3to2",
+					"chance": 100
+				},
+				{
+					"id": "losepower.memories2to1",
+					"chance": 100
+				},
+				{
+					"id": "losepower.memories1to0",
+					"chance": 100
+				},
+				{
+					"id": "losepower.mysteries6to5",
+					"chance": 100
+				},
+				{
+					"id": "losepower.mysteries5to4",
+					"chance": 100
+				},
+				{
+					"id": "losepower.mysteries4to3",
+					"chance": 100
+				},
+				{
+					"id": "losepower.mysteries3to2",
+					"chance": 100
+				},
+				{
+					"id": "losepower.mysteries2to1",
+					"chance": 100
+				},
+				{
+					"id": "losepower.mysteries1to0",
+					"chance": 100
+				},
+				{
+					"id": "losepower.stillness6to5",
+					"chance": 100
+				},
+				{
+					"id": "losepower.stillness5to4",
+					"chance": 100
+				},
+				{
+					"id": "losepower.stillness4to3",
+					"chance": 100
+				},
+				{
+					"id": "losepower.stillness3to2",
+					"chance": 100
+				},
+				{
+					"id": "losepower.stillness2to1",
+					"chance": 100
+				},
+				{
+					"id": "losepower.stillness1to0",
 					"chance": 100
 				}
 			]
@@ -219,7 +481,727 @@
 			"actionId": "extract"
 		},
 		{
-			"id": "extract.noteonsparks",
+			"id": "losepower.cruelty6to5",
+			"label": "Моя жестокость затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.cruelty6": 1
+			},
+			"effects": {
+				"my.cruelty5": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.cruelty5to4",
+			"label": "Моя жестокость затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.cruelty5": 1
+			},
+			"effects": {
+				"my.cruelty4": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.cruelty4to3",
+			"label": "Моя жестокость затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.cruelty4": 1
+			},
+			"effects": {
+				"my.cruelty3": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.cruelty3to2",
+			"label": "Моя жестокость затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.cruelty3": 1
+			},
+			"effects": {
+				"my.cruelty2": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.cruelty2to1",
+			"label": "Моя жестокость затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.cruelty2": 1
+			},
+			"effects": {
+				"my.cruelty1": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.cruelty1to0",
+			"label": "Моя жестокость тухнет",
+			"warmup": 10,
+			"requirements": {
+				"my.cruelty1": 1
+			},
+			"effects": {
+				"my.cruelty0": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.cunning6to5",
+			"label": "Моя хитрость затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.cunning6": 1
+			},
+			"effects": {
+				"my.cunning5": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.cunning5to4",
+			"label": "Моя хитрость затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.cunning5": 1
+			},
+			"effects": {
+				"my.cunning4": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.cunning4to3",
+			"label": "Моя хитрость затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.cunning4": 1
+			},
+			"effects": {
+				"my.cunning3": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.cunning3to2",
+			"label": "Моя хитрость затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.cunning3": 1
+			},
+			"effects": {
+				"my.cunning2": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.cunning2to1",
+			"label": "Моя хитрость затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.cunning2": 1
+			},
+			"effects": {
+				"my.cunning1": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.cunning1to0",
+			"label": "Моя хитрость тухнет",
+			"warmup": 10,
+			"requirements": {
+				"my.cunning1": 1
+			},
+			"effects": {
+				"my.cunning0": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.curiosity6to5",
+			"label": "Мое любопытство затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.curiosity6": 1
+			},
+			"effects": {
+				"my.curiosity5": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.curiosity5to4",
+			"label": "Мое любопытство затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.curiosity5": 1
+			},
+			"effects": {
+				"my.curiosity4": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.curiosity4to3",
+			"label": "Мое любопытство затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.curiosity4": 1
+			},
+			"effects": {
+				"my.curiosity3": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.curiosity3to2",
+			"label": "Мое любопытство затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.curiosity3": 1
+			},
+			"effects": {
+				"my.curiosity2": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.curiosity2to1",
+			"label": "Мое любопытство затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.curiosity2": 1
+			},
+			"effects": {
+				"my.curiosity1": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.curiosity1to0",
+			"label": "Мое любопытство тухнет",
+			"warmup": 10,
+			"requirements": {
+				"my.curiosity1": 1
+			},
+			"effects": {
+				"my.curiosity0": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.desires6to5",
+			"label": "Мои желания затухают",
+			"warmup": 10,
+			"requirements": {
+				"my.desires6": 1
+			},
+			"effects": {
+				"my.desires5": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.desires5to4",
+			"label": "Мои желания затухают",
+			"warmup": 10,
+			"requirements": {
+				"my.desires5": 1
+			},
+			"effects": {
+				"my.desires4": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.desires4to3",
+			"label": "Мои желания затухают",
+			"warmup": 10,
+			"requirements": {
+				"my.desires4": 1
+			},
+			"effects": {
+				"my.desires3": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.desires3to2",
+			"label": "Мои желания затухают",
+			"warmup": 10,
+			"requirements": {
+				"my.desires3": 1
+			},
+			"effects": {
+				"my.desires2": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.desires2to1",
+			"label": "Мои желания затухают",
+			"warmup": 10,
+			"requirements": {
+				"my.desires2": 1
+			},
+			"effects": {
+				"my.desires1": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.desires1to0",
+			"label": "Мои желания тухнут",
+			"warmup": 10,
+			"requirements": {
+				"my.desires1": 1
+			},
+			"effects": {
+				"my.desires0": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.fears6to5",
+			"label": "Мои страхи затухают",
+			"warmup": 10,
+			"requirements": {
+				"my.fears6": 1
+			},
+			"effects": {
+				"my.fears5": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.fears5to4",
+			"label": "Мои страхи затухают",
+			"warmup": 10,
+			"requirements": {
+				"my.fears5": 1
+			},
+			"effects": {
+				"my.fears4": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.fears4to3",
+			"label": "Мои страхи затухают",
+			"warmup": 10,
+			"requirements": {
+				"my.fears4": 1
+			},
+			"effects": {
+				"my.fears3": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.fears3to2",
+			"label": "Мои страхи затухают",
+			"warmup": 10,
+			"requirements": {
+				"my.fears3": 1
+			},
+			"effects": {
+				"my.fears2": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.fears2to1",
+			"label": "Мои страхи затухают",
+			"warmup": 10,
+			"requirements": {
+				"my.fears2": 1
+			},
+			"effects": {
+				"my.fears1": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.fears1to0",
+			"label": "Мои страхи тухнут",
+			"warmup": 10,
+			"requirements": {
+				"my.fears1": 1
+			},
+			"effects": {
+				"my.fears0": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.hatred6to5",
+			"label": "Моя ненависть затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.hatred6": 1
+			},
+			"effects": {
+				"my.hatred5": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.hatred5to4",
+			"label": "Моя ненависть затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.hatred5": 1
+			},
+			"effects": {
+				"my.hatred4": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.hatred4to3",
+			"label": "Моя ненависть затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.hatred4": 1
+			},
+			"effects": {
+				"my.hatred3": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.hatred3to2",
+			"label": "Моя ненависть затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.hatred3": 1
+			},
+			"effects": {
+				"my.hatred2": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.hatred2to1",
+			"label": "Моя ненависть затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.hatred2": 1
+			},
+			"effects": {
+				"my.hatred1": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.hatred1to0",
+			"label": "Моя ненависть тухнет",
+			"warmup": 10,
+			"requirements": {
+				"my.hatred1": 1
+			},
+			"effects": {
+				"my.hatred0": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.memories6to5",
+			"label": "Мои воспоминания затухают",
+			"warmup": 10,
+			"requirements": {
+				"my.memories6": 1
+			},
+			"effects": {
+				"my.memories5": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.memories5to4",
+			"label": "Мои воспоминания затухают",
+			"warmup": 10,
+			"requirements": {
+				"my.memories5": 1
+			},
+			"effects": {
+				"my.memories4": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.memories4to3",
+			"label": "Мои воспоминания затухают",
+			"warmup": 10,
+			"requirements": {
+				"my.memories4": 1
+			},
+			"effects": {
+				"my.memories3": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.memories3to2",
+			"label": "Мои воспоминания затухают",
+			"warmup": 10,
+			"requirements": {
+				"my.memories3": 1
+			},
+			"effects": {
+				"my.memories2": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.memories2to1",
+			"label": "Мои воспоминания затухают",
+			"warmup": 10,
+			"requirements": {
+				"my.memories2": 1
+			},
+			"effects": {
+				"my.memories1": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.memories1to0",
+			"label": "Мои воспоминания тухнут",
+			"warmup": 10,
+			"requirements": {
+				"my.memories1": 1
+			},
+			"effects": {
+				"my.memories0": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.mysteries6to5",
+			"label": "Мои тайны затухают",
+			"warmup": 10,
+			"requirements": {
+				"my.mysteries6": 1
+			},
+			"effects": {
+				"my.mysteries5": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.mysteries5to4",
+			"label": "Мои тайны затухают",
+			"warmup": 10,
+			"requirements": {
+				"my.mysteries5": 1
+			},
+			"effects": {
+				"my.mysteries4": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.mysteries4to3",
+			"label": "Мои тайны затухают",
+			"warmup": 10,
+			"requirements": {
+				"my.mysteries4": 1
+			},
+			"effects": {
+				"my.mysteries3": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.mysteries3to2",
+			"label": "Мои тайны затухают",
+			"warmup": 10,
+			"requirements": {
+				"my.mysteries3": 1
+			},
+			"effects": {
+				"my.mysteries2": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.mysteries2to1",
+			"label": "Мои тайны затухают",
+			"warmup": 10,
+			"requirements": {
+				"my.mysteries2": 1
+			},
+			"effects": {
+				"my.mysteries1": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.mysteries1to0",
+			"label": "Мои тайны тухнут",
+			"warmup": 10,
+			"requirements": {
+				"my.mysteries1": 1
+			},
+			"effects": {
+				"my.mysteries0": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.heart6to5",
+			"label": "Мое сердце затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.heart6": 1
+			},
+			"effects": {
+				"my.heart5": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.heart5to4",
+			"label": "Мое сердце затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.heart5": 1
+			},
+			"effects": {
+				"my.heart4": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.heart4to3",
+			"label": "Мое сердце затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.heart4": 1
+			},
+			"effects": {
+				"my.heart3": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.heart3to2",
+			"label": "Мое сердце затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.heart3": 1
+			},
+			"effects": {
+				"my.heart2": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.heart2to1",
+			"label": "Мое сердце затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.heart2": 1
+			},
+			"effects": {
+				"my.heart1": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.heart1to0",
+			"label": "Мое сердце тухнет",
+			"warmup": 10,
+			"requirements": {
+				"my.heart1": 1
+			},
+			"effects": {
+				"my.heart0": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.stillness6to5",
+			"label": "Мое спокойствие затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.stillness6": 1
+			},
+			"effects": {
+				"my.stillness5": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.stillness5to4",
+			"label": "Мое спокойствие затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.stillness5": 1
+			},
+			"effects": {
+				"my.stillness4": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.stillness4to3",
+			"label": "Мое спокойствие затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.stillness4": 1
+			},
+			"effects": {
+				"my.stillness3": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.stillness3to2",
+			"label": "Мое спокойствие затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.stillness3": 1
+			},
+			"effects": {
+				"my.stillness2": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.stillness2to1",
+			"label": "Мое спокойствие затухает",
+			"warmup": 10,
+			"requirements": {
+				"my.stillness2": 1
+			},
+			"effects": {
+				"my.stillness1": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "losepower.stillness1to0",
+			"label": "Мое спокойствие тухнет",
+			"warmup": 10,
+			"requirements": {
+				"my.stillness1": 1
+			},
+			"effects": {
+				"my.stillness0": 1
+			},
+			"actionId": "extract"
+		},
+		{
+			"id": "extract.noteonsparks1",
 			"label": "Я взываю к искрам",
 			"warmup": 10,
 			"craftable": true,
@@ -250,6 +1232,470 @@
 					"chance": 100
 				}
 			]
+		},
+		{
+			"id": "extract.noteonsparks2",
+			"label": "Я взываю к снежинкам",
+			"warmup": 10,
+			"craftable": true,
+			"internaldeck": {
+				"spec": [
+					"spell.naum",
+					"spell.naum",
+					"spell.sesticia",
+					"spell.sesticia",
+					"spell.sesticia",
+					"spell.confundo",
+					"spell.confundo",
+					"spell.confundo",
+					"spell.confundo",
+					"spell.confundo"
+				],
+				"resetonexhaustion": true
+			},
+			"requirements": {
+				"knowledge.noteonsparks": 1,
+				"mywill": -1,
+				"mystillness": 1
+			},
+			"actionId": "extract",
+			"linked": [
+				{
+					"id": "extract.losepowers",
+					"chance": 100
+				}
+			]
+		},
+		{
+			"id": "convey.shrinekeeper",
+			"label": "Восстановить силы",
+			"warmup": 30,
+			"craftable": true,
+			"requirements": {
+				"ally.shrinekeeper": 1
+			},
+			"effects": {
+				"ally.shrinekeeper": -1
+			},
+			"actionId": "convey",
+			"linked": [
+				{
+					"id": "gainpower.heartto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.stillnessto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.crueltyto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.cunningto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.curiosityto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.desiresto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.fearsto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.hatredto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.memoriesto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.mysteriesto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.willto3",
+					"chance": 100
+				}
+			]
+		},
+		{
+			"id": "gainpower.heartto3",
+			"label": "Мое сердце укрепляется",
+			"warmup": 10,
+			"requirements": {
+				"myheart": 1
+			},
+			"effects": {
+				"my.heart3": 1
+			},
+			"actionId": "extract",
+			"linked": [
+				{
+					"id": "gainpower.stillnessto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.crueltyto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.cunningto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.curiosityto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.desiresto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.fearsto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.hatredto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.memoriesto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.mysteriesto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.willto3",
+					"chance": 100
+				}
+			]
+		},
+		{
+			"id": "gainpower.stillnessto3",
+			"label": "Мое спокойствие укрепляется",
+			"warmup": 10,
+			"requirements": {
+				"mystillness": 1
+			},
+			"effects": {
+				"my.stillness3": 1
+			},
+			"actionId": "extract",
+			"linked": [
+				{
+					"id": "gainpower.crueltyto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.cunningto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.curiosityto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.desiresto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.fearsto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.hatredto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.memoriesto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.mysteriesto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.willto3",
+					"chance": 100
+				}
+			]
+		},
+		{
+			"id": "gainpower.crueltyto3",
+			"label": "Моя жестокость укрепляется",
+			"warmup": 10,
+			"requirements": {
+				"mycruelty": 1
+			},
+			"effects": {
+				"my.cruelty3": 1
+			},
+			"actionId": "extract",
+			"linked": [
+				{
+					"id": "gainpower.cunningto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.curiosityto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.desiresto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.fearsto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.hatredto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.memoriesto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.mysteriesto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.willto3",
+					"chance": 100
+				}
+			]
+		},
+		{
+			"id": "gainpower.cunningto3",
+			"label": "Моя хитрость укрепляется",
+			"warmup": 10,
+			"requirements": {
+				"mycunning": 1
+			},
+			"effects": {
+				"my.cunning3": 1
+			},
+			"actionId": "extract",
+			"linked": [
+				{
+					"id": "gainpower.curiosityto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.desiresto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.fearsto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.hatredto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.memoriesto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.mysteriesto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.willto3",
+					"chance": 100
+				}
+			]
+		},
+		{
+			"id": "gainpower.curiosityto3",
+			"label": "Мое любопытство укрепляется",
+			"warmup": 10,
+			"requirements": {
+				"mycuriosity": 1
+			},
+			"effects": {
+				"my.curiosity3": 1
+			},
+			"actionId": "extract",
+			"linked": [
+				{
+					"id": "gainpower.desiresto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.fearsto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.hatredto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.memoriesto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.mysteriesto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.willto3",
+					"chance": 100
+				}
+			]
+		},
+		{
+			"id": "gainpower.desiresto3",
+			"label": "Мои желания укрепляются",
+			"warmup": 10,
+			"requirements": {
+				"mydesires": 1
+			},
+			"effects": {
+				"my.desires3": 1
+			},
+			"actionId": "extract",
+			"linked": [
+				{
+					"id": "gainpower.fearsto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.hatredto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.memoriesto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.mysteriesto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.willto3",
+					"chance": 100
+				}
+			]
+		},
+		{
+			"id": "gainpower.fearsto3",
+			"label": "Мои страхи укрепляются",
+			"warmup": 10,
+			"requirements": {
+				"myfears": 1
+			},
+			"effects": {
+				"my.fears3": 1
+			},
+			"actionId": "extract",
+			"linked": [
+				{
+					"id": "gainpower.hatredto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.memoriesto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.mysteriesto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.willto3",
+					"chance": 100
+				}
+			]
+		},
+		{
+			"id": "gainpower.hatredto3",
+			"label": "Моя ненависть укрепляется",
+			"warmup": 10,
+			"requirements": {
+				"myhatred": 1
+			},
+			"effects": {
+				"my.hatred3": 1
+			},
+			"actionId": "extract",
+			"linked": [
+				{
+					"id": "gainpower.memoriesto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.mysteriesto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.willto3",
+					"chance": 100
+				}
+			]
+		},
+		{
+			"id": "gainpower.memoriesto3",
+			"label": "Мои воспоминания укрепляются",
+			"warmup": 10,
+			"requirements": {
+				"mymemories": 1
+			},
+			"effects": {
+				"my.memories3": 1
+			},
+			"actionId": "extract",
+			"linked": [
+				{
+					"id": "gainpower.mysteriesto3",
+					"chance": 100
+				},
+				{
+					"id": "gainpower.willto3",
+					"chance": 100
+				}
+			]
+		},
+		{
+			"id": "gainpower.mysteriesto3",
+			"label": "Мои тайны укрепляются",
+			"warmup": 10,
+			"requirements": {
+				"mymysteries": 1
+			},
+			"effects": {
+				"my.mysteries3": 1
+			},
+			"actionId": "extract",
+			"linked": [
+				{
+					"id": "gainpower.willto3",
+					"chance": 100
+				}
+			]
+		},
+		{
+			"id": "gainpower.willto3",
+			"label": "Моя воля укрепляется",
+			"warmup": 10,
+			"requirements": {
+				"mywill": 1
+			},
+			"effects": {
+				"my.will3": 1
+			},
+			"actionId": "extract"
 		}
 	]
 }

@@ -5,7 +5,10 @@
 			"label": "Обратиться",
 			"description": "Там где не справлюсь я — помогут другие.",
 			"slot": {
-				"id": "convey"
+				"id": "convey",
+				"required": {
+					"allied": 1
+				}
 			}
 		},
 		{

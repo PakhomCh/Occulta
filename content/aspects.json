@@ -16,6 +16,8 @@
 		},
 		{
 			"id": "effect",
+			"label": "Заклятие",
+			"description": "Пускай и не самое искустное, но вполне живое проявление человеческой воли.",
 			"isAspect": true
 		},
 		{
@@ -64,6 +66,30 @@
 		},
 		{
 			"id": "mymysteries",
+			"isAspect": true
+		},
+		{
+			"id": "mycruelty",
+			"isAspect": true
+		},
+		{
+			"id": "mycuriosity",
+			"isAspect": true
+		},
+		{
+			"id": "mydesires",
+			"isAspect": true
+		},
+		{
+			"id": "myfears",
+			"isAspect": true
+		},
+		{
+			"id": "myhatred",
+			"isAspect": true
+		},
+		{
+			"id": "mymemories",
 			"isAspect": true
 		},
 		{
